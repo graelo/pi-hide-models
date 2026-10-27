@@ -1,0 +1,48 @@
+{
+  "name": "@graelo/pi-hide-models",
+  "version": "0.1.0",
+  "description": "Hide models from a provider's catalog in pi — pickers, --list-models, session restore, and subagent model resolution only see what you keep",
+  "type": "module",
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test src/*.test.ts"
+  },
+  "dependencies": {
+    "@graelo/pi-ext-config": "^0.2.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.1.0",
+    "@types/node": "^22",
+    "tsx": "^4.23.9",
+    "typescript": "^6.0.3"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "extension",
+    "model",
+    "filter",
+    "hide",
+    "openrouter"
+  ],
+  "author": "graelo",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
